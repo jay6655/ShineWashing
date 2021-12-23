@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shine Washing</string>
+    <string name="txt_welcome">Wel come</string>
+    <string name="txt_login_msg">A 4 digit OTP will br sent via SMS to verify your mobile number!</string>
+    <string name="txtNext">Next</string>
+    <string name="mobile_hint">Enter Mobile number</string>
+    <string name="txtLogin">Login</string>
 </resources>

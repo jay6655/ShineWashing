@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppFullScreen">
-        <activity android:name=".initialize.SplashActivity">
+        android:theme="@style/Theme.ShineWashingRepo">
+        <activity android:name=".initialize.SplashActivity"
+            android:theme="@style/AppFullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,7 @@
 
         <activity
             android:name=".initialize.LoginActivity"
-            android:theme="@style/Theme.ShineWashingRepo" />
+            android:theme="@style/AppFullScreen" />
 
         <activity
             android:name=".MainActivity"
