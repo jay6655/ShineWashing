@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSelectYour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/txt_add"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVehicleType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:text="@string/txtCar"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectYour" />
+
+    <EditText
+        android:id="@+id/edtCarNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="@string/txtCarNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvVehicleType" />
+
+    <TextView
+        android:id="@+id/tvCarMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/txtCarMake"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@+id/edtCarNum" />
+
+    <RelativeLayout
+        android:id="@+id/borderCarMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintTop_toBottomOf="@+id/tvCarMake">
+
+        <Spinner
+            android:id="@+id/spCarMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_size_array"
+            android:padding="@dimen/_8sdp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/txtCarModel"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@+id/borderCarMake" />
+
+
+    <RelativeLayout
+        android:id="@+id/borderCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintTop_toBottomOf="@+id/tvCarModel">
+
+        <Spinner
+            android:id="@+id/spCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_size_array"
+            android:padding="@dimen/_8sdp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/txtCarSize"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@+id/borderCarModel" />
+
+
+    <RelativeLayout
+        android:id="@+id/borderCarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintTop_toBottomOf="@+id/tvCarSize">
+
+        <Spinner
+            android:id="@+id/spCarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_size_array"
+            android:padding="@dimen/_8sdp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnAddCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/txtAddCar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

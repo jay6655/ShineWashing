@@ -23,6 +23,14 @@
             android:theme="@style/AppFullScreen" />
 
         <activity
+            android:name=".initialize.OtpVerifyActivity"
+            android:theme="@style/AppFullScreen" />
+
+        <activity android:name=".AddVehicleActivity"/>
+
+        <activity android:name=".AddressActivity"/>
+
+        <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.ShineWashingRepo" />
 

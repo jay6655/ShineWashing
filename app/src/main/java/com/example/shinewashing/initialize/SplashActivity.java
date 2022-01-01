@@ -7,9 +7,13 @@ import android.os.Looper;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.shinewashing.AddVehicleActivity;
 import com.example.shinewashing.R;
+import com.example.shinewashing.templete.SharedPreferencesApplication;
 
 public class SplashActivity extends AppCompatActivity {
+
+    private final SharedPreferencesApplication sh = SharedPreferencesApplication.getInstance();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,8 +26,12 @@ public class SplashActivity extends AppCompatActivity {
         super.onStart();
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            startActivity(LoginActivity.getLoginActivityIntent(SplashActivity.this));
+            if (sh.getOtpVerified(SplashActivity.this)) {
+                startActivity(AddVehicleActivity.getAddVehicleActivityIntent(SplashActivity.this));
+            } else {
+                startActivity(LoginActivity.getLoginActivityIntent(SplashActivity.this));
+            }
             finish();
-        }, 5000);
+        }, 1000);
     }
 }

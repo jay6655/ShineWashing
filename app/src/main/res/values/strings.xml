@@ -5,4 +5,51 @@
     <string name="txtNext">Next</string>
     <string name="mobile_hint">Enter Mobile number</string>
     <string name="txtLogin">Login</string>
+
+    <string name="verification_code_subtext">Please type the verification code sent to ### </string>
+    <string name="verification_code">Verification Code</string>
+    <string name="txtVerify">Verify</string>
+    <string name="txt_select_your">Select Your</string>
+    <string name="txt_vehicle_type">Vehicle Type</string>
+    <string name="txtBike">Bike</string>
+    <string name="txtCar">Car</string>
+    <string name="txt_add">Add</string>
+    <string name="txtCarNumber">Car number</string>
+    <string name="txtCarMake">Car Make</string>
+    <string name="txtCarModel">Car Model</string>
+    <string name="txtCarSize">Car Size</string>
+    <string name="txtAddCar">Add Car</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">"Address Line 2 "</string>
+
+    <string-array name="car_size_array">
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </string-array>
+
+    <string-array name="address_type_array">
+        <item>Select Address type</item>
+        <item>Residential</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="state_array">
+        <item>Select State</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>Select City</item>
+    </string-array>
+
+    <string-array name="area_array">
+        <item>Select Area</item>
+    </string-array>
+
+
+    <string name="txtSelState">Select State</string>
+    <string name="landmark">Landmare</string>
+    <string name="txtPinCode">Pin code</string>
+    <string name="txtAdd">Add</string>
+
 </resources>
